@@ -11,3 +11,4 @@ RUN groupadd -r rapp -g 10007 && \
 USER rapp
 WORKDIR /var/redi/rapp
 RUN mkdir utils logs archives
+COPY utils/* utils
